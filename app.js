@@ -14,6 +14,3 @@ console.log('Server running at http://127.0.0.1:8000/');
 
 
 
-//Function that handle the reading of files and merge in values
-  //read from file and get string
-    //merge values into string
