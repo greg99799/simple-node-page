@@ -1,9 +1,6 @@
 var Profile = require("./profile.js");
 
-
-
-
-//2. Handle HTTP route GET / and POST / i.e. Home 
+// Handle HTTP route GET / and POST / i.e. Home 
 function home(request, response) {
   //if url = "/" && GET
   if (request.url === "/") {
@@ -16,7 +13,7 @@ function home(request, response) {
   //if url = "/" && POST
     //redirect to /:username
 }
-//3. Handle HTTP route for GET /:username i.e. /greg99799
+// Handle HTTP route for GET /:username i.e. /greg99799
 function user(request, response) {
   //if url = "/..."
   var username = request.url.replace("/", "")
@@ -38,7 +35,7 @@ function user(request, response) {
         javascriptPoints: profileJSON.points.JavaScript,
       }
       //simple response
-      response.write(values.username + " has " + values.badges + "badges" + "\n");
+      response.write(values.username + " has " + values.badges + "badges\n");
       response.end("Footer\n");     
     });
       //on "error"
